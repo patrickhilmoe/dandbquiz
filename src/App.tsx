@@ -24,8 +24,6 @@ import rightmiele1 from './img/right-mieledw1.jpg';
 import wrongmiele1 from './img/wrong-mieledw1.jpg';
 import wrongmiele2 from './img/wrong-mieledw2.jpg';
 import wrongmiele3 from './img/wrong-mieledw3.jpg';
-import rightelement1 from './img/right-element1.jpg';
-import wrongelement1 from './img/wrong-element1.jpg';
 
 
 interface Question {
@@ -57,23 +55,23 @@ const questions: Question[] = [
     question: "Which is the correct Bosch serial number?",
     options: [
       { text: "1", image: wrongbosch1 },
-      { text: "2", image: rightbosch1 },
-      { text: "3", image: wrongbosch2 },
-      { text: "4", image: wrongbosch3 }
+      { text: "2", image: wrongbosch2 },
+      { text: "3", image: wrongbosch3 },
+      { text: "4", image: rightbosch1 }
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: "Bosch and Thermador serial numbers are 9 digits long."
   },
   {
     id: 3,
     question: "Which is the correct LG serial number?",
     options: [
-      { text: "1", image: wronglg1 },
-      { text: "2", image: rightlg1 },
+      { text: "1", image: rightlg1 },
+      { text: "2", image: wronglg1 },
       { text: "3", image: wronglg2 },
       { text: "4", image: wronglg3 }
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: "This brand the named serial number is actually the serial number."
   },
   {
@@ -85,19 +83,19 @@ const questions: Question[] = [
       { text: "3", image: wrongmw2 },
       { text: "4", image: wrongmw3 }
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: "LG serial numbers and the same serial numbers D&B uses."
   },
   {
     id: 5,
     question: "Which is the correct Fisher Paykel serial number?",
     options: [
-      { text: "1", image: wrongfp1 },
-      { text: "2", image: rightfp1 },
+      { text: "1", image: rightfp1 },
+      { text: "2", image: wrongfp1 },
       { text: "3", image: wrongfp2 },
       { text: "4", image: wrongfp3 }
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: "It is the one below the barcode."
   },
   {
@@ -105,60 +103,60 @@ const questions: Question[] = [
     question: "Which is the correct Miele serial number?",
     options: [
       { text: "1", image: wrongmiele1 },
-      { text: "2", image: rightmiele1 },
-      { text: "3", image: wrongmiele2 },
+      { text: "2", image: wrongmiele2 },
+      { text: "3", image: rightmiele1 },
       { text: "4", image: wrongmiele3 }
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: "It is the small one with a number off to the side. Sometimes that single number is included, record it just in case."
   },
   {
     id: 8,
-    question: "Which is the correct element serial number?",
+    question: "Which location is Meridian Floor?",
     options: [
-      { text: "1", image: wrongelement1 },
-      { text: "2", image: rightelement1 },
-      { text: "3", image: "https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "4", image: "https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=400" }
+      { text: "200", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "500", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "600", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "300", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" }
     ],
-    correctAnswer: 1,
-    explanation: "It is the one with the larger model number text in it."
+    correctAnswer: 3,
+    explanation: "Meridian is out of box and wrapped."
   },
   {
     id: 7,
-    question: "In what year did World War II end?",
+    question: "Which location is Burlington?",
     options: [
-      { text: "1944", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "1945", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "1946", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "1947", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" }
+      { text: "200", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "500", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "600", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "300", image: "https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400" }
     ],
-    correctAnswer: 1,
-    explanation: "World War II ended in 1945 with Japan's surrender in September."
+    correctAnswer: 2,
+    explanation: "Burlington has both boxed and unboxed items."
   },
   {
     id: 9,
-    question: "Which instrument measures atmospheric pressure?",
+    question: "which location is Hannegan Floor?",
     options: [
-      { text: "Thermometer", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Barometer", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Hygrometer", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Anemometer", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" }
+      { text: "200", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "500", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "600", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "300", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" }
     ],
-    correctAnswer: 1,
-    explanation: "A barometer measures atmospheric pressure, helping predict weather."
+    correctAnswer: 0,
+    explanation: "Hannegan floor is out of box and wrapped."
   },
   {
     id: 10,
-    question: "What is the hardest natural substance on Earth?",
+    question: "What is my favorite color?",
     options: [
-      { text: "Gold", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Iron", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Diamond", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
-      { text: "Quartz", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" }
+      { text: "Blue", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "Green", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "Yellow", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" },
+      { text: "Red", image: "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=400" }
     ],
     correctAnswer: 2,
-    explanation: "Diamond rates 10 on the Mohs scale of mineral hardness."
+    explanation: "Yellow is"
   }
 ];
 
