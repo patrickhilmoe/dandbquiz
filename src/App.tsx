@@ -299,6 +299,7 @@ function App() {
                     src={option.image} 
                     alt={option.text}
                     className="w-full h-full object-cover"
+                    loading='lazy'
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300"></div>
                 </div>
